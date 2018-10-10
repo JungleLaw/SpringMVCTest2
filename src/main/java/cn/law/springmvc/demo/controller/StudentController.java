@@ -15,7 +15,7 @@ public class StudentController {
     private StudentService studentService;
 
     @RequestMapping("/find")
-    private String find(int id) {
+    private String find(Integer id) {
         System.out.println("pre");
         Student student = studentService.findStudentById(1);
         System.out.println(student.toString());
